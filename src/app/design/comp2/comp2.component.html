@@ -1,19 +1,24 @@
-<div>Component 2 outlet</div>
-<div class="menu">
-    
-     
-      <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-        <a [routerLink]="['comp2a']" routerLinkActive="active" >Tab A</a>
-      </li>
-      <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-        <a [routerLink]="['comp2b']" routerLinkActive="active" >Tab B</a>
-      </li>
-      <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-        <a [routerLink]="['comp2c']" routerLinkActive="active" >Tab C</a>
-      </li>
-     
-      <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-        <a routerLink='/'>Main</a>
-      </li>
+
+<div>Component2 app outlet</div>
+<nav class="navbar navbar-PILLS ">
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a routerLink='/'>Main</a>
+            </li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a routerLink='comp2a'>Component TwoA</a>
+            </li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a routerLink='comp2b'>Component TwoB</a>
+            </li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a routerLink='comp2c'>Component TwoC</a>
+            </li>
+        </ul>
+
     </div>
-    <router-outlet></router-outlet>
+</nav>
+<br>
+<br>
+<router-outlet></router-outlet>

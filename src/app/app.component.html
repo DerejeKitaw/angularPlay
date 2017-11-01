@@ -1,18 +1,34 @@
-<div class="menu">
 
-  <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-    <a routerLink='/comp1'>Component One</a>
-  </li>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <!-- <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Bootstrap theme</a>
+      </div> -->
 
-  <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-    <a routerLink='/comp2'>Component Two</a>
-  </li>
-  <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-    <a routerLink='/comp3'>Component Three</a>
-  </li>
-  <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-    <a routerLink='/'>Main</a>
-  </li>
-</div>
-<div>Component app outlet</div>
+        <ul class="nav navbar-nav">
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a routerLink='/'>Main</a>
+            </li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a routerLink='/comp1'>Component One</a>
+            </li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a routerLink='/comp2'>Component Two</a>
+            </li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a routerLink='/comp3'>Component Three</a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+<br>
+<br>
+<br>
 <router-outlet></router-outlet>

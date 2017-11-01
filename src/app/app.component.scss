@@ -1,0 +1,7 @@
+.menu{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: grey;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(50px, auto);
+}

@@ -1,3 +1,19 @@
-<p>
-  comp1 works!
-</p>
+<div>Component 1 outlet</div>
+<div class="menu">
+    
+     
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        <a [routerLink]="['comp1a']" routerLinkActive="active" >Component OneA</a>
+      </li>
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        <a [routerLink]="['comp1b']" routerLinkActive="active" >Component OneB</a>
+      </li>
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        <a [routerLink]="['comp1c']" routerLinkActive="active" >Component OneC</a>
+      </li>
+     
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        <a routerLink='/'>Main</a>
+      </li>
+    </div>
+    <router-outlet></router-outlet>

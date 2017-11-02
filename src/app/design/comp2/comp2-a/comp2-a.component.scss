@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background: rgb(0,0,10);
+    color: hotpink;
+    text-align: center;
+  }
+  
+  h1 {
+    font-family: Avenir Next;
+    font-weight: 900;
+    font-size: 3rem;
+    height: 2em;
+    line-height: 6rem;
+  }
+  .glint {
+    position: absolute;
+    width: 100%;
+    transform: translate3d(20rem, 1.5em, 0) rotate(-70deg);
+    color: white;
+    height: 1em;
+    overflow: hidden;
+    animation: outer 4s linear infinite alternate;
+  }
+  .glint h1 {
+    transform: rotate(70deg) translate3d(-20rem, 0, 0); 
+    animation: inner 4s linear infinite alternate;
+  }
+  @keyframes outer {
+    0% {
+      transform: translate3d(-20rem, 1.5em, 0) rotate(-70deg);
+    }
+  }
+  @keyframes inner {
+    0% {
+      transform: rotate(70deg) translate3d(20rem, 0, 0);    
+    }
+  }

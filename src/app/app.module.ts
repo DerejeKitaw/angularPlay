@@ -6,10 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DesignModule } from 'app/design/design.module';
+import { MyNgIfDirective } from './my-ng-if/my-ng-if.directive';
+import { TestMyNgIfDirectiveComponent } from './test-my-ng-if-directive/test-my-ng-if-directive.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MyNgIfDirective,
+    TestMyNgIfDirectiveComponent
   ],
   imports: [
     BrowserModule,
